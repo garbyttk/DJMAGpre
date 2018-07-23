@@ -1,9 +1,16 @@
-
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html xmlns:wb="http://open.weibo.com/wb" class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html xmlns:wb="http://open.weibo.com/wb" class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html xmlns:wb="http://open.weibo.com/wb" class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html xmlns:wb="http://open.weibo.com/wb" class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><html xmlns:wb="http://open.weibo.com/wb" class="no-js ie" lang="en" dir="ltr" prefix="fb: http://ogp.me/ns/fb# og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product#"><![endif]-->
+<!--[if !IE]><!--><!--<![endif]-->
+<head>
 <html>
   <head>
   <title>DJ MAG 2018 Prediction</title>
     <meta charset="utf-8" />
-    <!-- <link rel="stylesheet" href="djmag.css" type="text/css"> -->
+    <link rel="stylesheet" href="djmag.css" type="text/css">
   </head>
   <body>
     <p>
@@ -268,22 +275,15 @@
 <div class="views-field views-field-field-top100-position"> <div class="field-content">20 Dash Berlin</div> </div>
 <div> <div></a></div> </div> </article>
 </div>
+<div class="container_with_line" id="60124">
+<article>
+<div class="views-field views-field-field-media"> <div class="field-content"><a href="/top-100-djs/poll-2017-axwell-ingrosso"><div class="media" id="file-24534">
+<figure class="media--image">
+
+
+
+</div> </div>
 
    
   </script></body>
 </html>
-
-
-
-<h1>{{ question.question_text }}</h1>
-
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-
-<form action="{% url 'poll_vote' question.id %}" method="post">
-  {% csrf_token %}
-  {% for choice in question.choice_set.all %}
-  <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
-  <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
-  {% endfor %}
-  <input type="submit" value="Vote" />
-</form>
